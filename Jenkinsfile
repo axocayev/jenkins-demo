@@ -13,7 +13,7 @@ node {
                              doGenerateSubmoduleConfigurations: false,
                              extensions: [[$class: 'CleanCheckout']],
                              submoduleCfg: [],
-                             userRemoteConfigs: [[credentialsId: '371268a0-58c4-4114-8517-49ac369edb6e', url: 'https://github.com/axocayev/jenkins-demo.git']]])
+                             userRemoteConfigs: [[credentialsId: 'fac54609-7ecd-43bc-8b16-134cdbcb0f7f', url: 'https://github.com/axocayev/jenkins-demo.git']]])
 
 
             }
