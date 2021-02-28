@@ -13,7 +13,7 @@ node {
                              doGenerateSubmoduleConfigurations: false,
                              extensions: [[$class: 'CleanCheckout']],
                              submoduleCfg: [],
-                             userRemoteConfigs: [[credentialsId: 'fac54609-7ecd-43bc-8b16-134cdbcb0f7f', url: 'https://github.com/axocayev/jenkins-demo.git']]])
+                             userRemoteConfigs: [[credentialsId: '371268a0-58c4-4114-8517-49ac369edb6e', url: 'https://github.com/axocayev/jenkins-demo.git']]])
 
 
             }
@@ -33,7 +33,7 @@ node {
             withEnv(["MVN_HOME=$mvnHome"]) {
 
                 if (isUnix()) {
-                   sh 'JENKINS_NODE_COOKIE=dontKillMe nohup java -jar -Dspring.profiles.active=prod  target/*.jar >> server-process-prod.log 2>&1 &'
+                   sh 'JENKINS_NODE_COOKIE=dontKillMe nohup java -jar   target/*.jar >> server-process-prod.log 2>&1 &'
 
                 } else {
                    // bat(/"%MVN_HOME%\bin\mvn"  exec:java/)
