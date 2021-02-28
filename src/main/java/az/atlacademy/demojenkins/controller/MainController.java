@@ -10,4 +10,9 @@ public class MainController {
         return "Jenkins tutorial  some new text addded";
 
     }
+    @GetMapping(value = "/test")
+    public String test(){
+        return "TEST DEMO JENKINS";
+
+    }
 }

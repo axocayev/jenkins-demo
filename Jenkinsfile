@@ -28,6 +28,8 @@ node {
         }
     }
 
+
+
        stage('Deploy and run') {
             // Run the maven build
             withEnv(["MVN_HOME=$mvnHome"]) {
